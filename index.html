@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Future Seeds helps school students, college students, and online learners build confidence, communication skills, sports development, tech exposure, and career clarity through mentorship and community clubs.">
+    <meta name="keywords" content="student development, career awareness, mentorship, communication skills, student clubs, badminton club, chess club, spoken english, leadership, future ready">
+    <meta name="author" content="Future Seeds">
+    <meta property="og:title" content="Future Seeds 🌱 | Build Confidence, Skills & Career Clarity">
+    <meta property="og:description" content="A student growth platform helping students become future-ready through mentorship, sports, technology, and community clubs.">
+    <meta property="og:type" content="website">
+    <title>Future Seeds 🌱 | Helping Students Become Future-Ready</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Analytics Mock -->
+    <script>
+        // Google Analytics Initializer
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA-TRACKING-ID-MOCK');
+        console.log("Google Analytics initialized.");
+    </script>
+</head>
+<body>
+    <!-- Top Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Future Seeds Logo" class="logo-img">
+                <span class="logo-text">Future<span class="logo-accent">Seeds</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#problem" class="nav-link">The Gap</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#programs" class="nav-link">Clubs & Programs</a>
+                <a href="#impact" class="nav-link">Our Impact</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#faq" class="nav-link">FAQs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="nav-actions-mobile">
+                    <button class="btn btn-secondary open-mentor-modal">Become a Mentor</button>
+                    <button class="btn btn-primary open-student-modal">Join Community</button>
+                </div>
+            </nav>
+
+            <div class="header-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                </button>
+                
+                <!-- CTA Desktop Buttons -->
+                <div class="header-actions">
+                    <button class="btn btn-secondary open-mentor-modal">Become a Mentor</button>
+                    <button class="btn btn-primary open-student-modal">Join Community</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Menu">
+                    <i data-lucide="menu" class="icon-menu"></i>
+                    <i data-lucide="x" class="icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-new">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Empowering the Next Generation</span>
+                </div>
+                <h1 class="hero-title">Helping Students Build <span class="text-gradient">Confidence</span>, Skills & Career Clarity</h1>
+                <p class="hero-subtitle">Future Seeds is a student growth platform helping school students, college students, and online learners become future-ready through mentorship, sports, technology, and community clubs.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-primary btn-lg open-student-modal">Join Future Seeds</button>
+                    <button class="btn btn-secondary btn-lg open-mentor-modal">Become a Mentor</button>
+                </div>
+                
+                <!-- Quick stats in Hero -->
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-num counter" data-target="5000">0</span><span class="hero-stat-plus">+</span>
+                        <p class="hero-stat-label">Students Impacted</p>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-num counter" data-target="12">0</span><span class="hero-stat-plus">+</span>
+                        <p class="hero-stat-label">Active Clubs</p>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-num counter" data-target="50">0</span><span class="hero-stat-plus">+</span>
+                        <p class="hero-stat-label">Expert Mentors</p>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-num counter" data-target="150">0</span><span class="hero-stat-plus">+</span>
+                        <p class="hero-stat-label">Events Hosted</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-graphic">
+                <div class="graphic-container">
+                    <div class="main-card">
+                        <div class="card-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="main-card-illustration">
+                            <!-- SVGs inside main card -->
+                            <svg viewBox="0 0 400 300" class="hero-svg">
+                                <defs>
+                                    <linearGradient id="grad-green" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#2F7C31" />
+                                        <stop offset="100%" stop-color="#4CAF50" />
+                                    </linearGradient>
+                                    <linearGradient id="grad-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#F4D03F" />
+                                        <stop offset="100%" stop-color="#F1C40F" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Grid Lines -->
+                                <line x1="50" y1="0" x2="50" y2="300" stroke="var(--border-color)" stroke-dasharray="4 4" />
+                                <line x1="150" y1="0" x2="150" y2="300" stroke="var(--border-color)" stroke-dasharray="4 4" />
+                                <line x1="250" y1="0" x2="250" y2="300" stroke="var(--border-color)" stroke-dasharray="4 4" />
+                                <line x1="350" y1="0" x2="350" y2="300" stroke="var(--border-color)" stroke-dasharray="4 4" />
+                                <line x1="0" y1="100" x2="400" y2="100" stroke="var(--border-color)" stroke-dasharray="4 4" />
+                                <line x1="0" y1="200" x2="400" y2="200" stroke="var(--border-color)" stroke-dasharray="4 4" />
+                                
+                                <!-- Central Shield & Seed -->
+                                <circle cx="200" cy="150" r="60" fill="url(#grad-green)" opacity="0.1" />
+                                <circle cx="200" cy="150" r="45" fill="url(#grad-green)" opacity="0.15" />
+                                <circle cx="200" cy="150" r="30" fill="url(#grad-green)" opacity="0.3" />
+                                <path d="M200 135 C185 135 180 150 200 168 C220 150 215 135 200 135 Z" fill="url(#grad-green)" />
+                                <path d="M200 168 L200 150" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M200 148 C192 144 186 148 184 154" stroke="url(#grad-yellow)" stroke-width="2" stroke-linecap="round" fill="none" />
+                                <path d="M200 153 C208 149 214 153 216 159" stroke="url(#grad-yellow)" stroke-width="2" stroke-linecap="round" fill="none" />
+                                
+                                <!-- Orbital particles / concepts -->
+                                <g class="orbit-item shadow-sm">
+                                    <circle cx="100" cy="80" r="22" fill="var(--bg-primary)" stroke="var(--border-color)" stroke-width="1.5" />
+                                    <path d="M93 80 L107 80 M100 73 L100 87" stroke="#2F7C31" stroke-width="2" stroke-linecap="round" />
+                                    <text x="100" y="115" text-anchor="middle" font-size="10" font-family="Inter" fill="var(--text-secondary)" font-weight="600">Skills</text>
+                                </g>
+                                <g class="orbit-item shadow-sm">
+                                    <circle cx="300" cy="90" r="22" fill="var(--bg-primary)" stroke="var(--border-color)" stroke-width="1.5" />
+                                    <polygon points="295,95 305,80 300,80 305,95" fill="#F4D03F" stroke="#F4D03F" stroke-width="1" />
+                                    <text x="300" y="125" text-anchor="middle" font-size="10" font-family="Inter" fill="var(--text-secondary)" font-weight="600">Careers</text>
+                                </g>
+                                <g class="orbit-item shadow-sm">
+                                    <circle cx="90" cy="210" r="22" fill="var(--bg-primary)" stroke="var(--border-color)" stroke-width="1.5" />
+                                    <circle cx="90" cy="205" r="5" fill="#2F7C31" />
+                                    <path d="M80 218 C80 210 100 210 100 218" fill="none" stroke="#2F7C31" stroke-width="2" />
+                                    <text x="90" y="245" text-anchor="middle" font-size="10" font-family="Inter" fill="var(--text-secondary)" font-weight="600">Mentorship</text>
+                                </g>
+                                <g class="orbit-item shadow-sm">
+                                    <circle cx="310" cy="200" r="22" fill="var(--bg-primary)" stroke="var(--border-color)" stroke-width="1.5" />
+                                    <rect x="302" y="192" width="16" height="16" rx="3" fill="none" stroke="#F4D03F" stroke-width="2" />
+                                    <path d="M305 197 L310 202 L315 197" fill="none" stroke="#2F7C31" stroke-width="2" stroke-linecap="round" />
+                                    <text x="310" y="235" text-anchor="middle" font-size="10" font-family="Inter" fill="var(--text-secondary)" font-weight="600">Sports</text>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Overlay floating cards -->
+                    <div class="floating-card c-1 animate-float">
+                        <div class="f-icon green"><i data-lucide="award"></i></div>
+                        <div class="f-info">
+                            <span class="f-title">Confidence Boost</span>
+                            <span class="f-subtitle">Interactive public speaking</span>
+                        </div>
+                    </div>
+                    <div class="floating-card c-2 animate-float-delay">
+                        <div class="f-icon yellow"><i data-lucide="compass"></i></div>
+                        <div class="f-info">
+                            <span class="f-title">Career Blueprint</span>
+                            <span class="f-subtitle">1-on-1 industry roadmap</span>
+                        </div>
+                    </div>
+                    <div class="floating-card c-3 animate-float">
+                        <div class="f-icon green"><i data-lucide="users"></i></div>
+                        <div class="f-info">
+                            <span class="f-title">Student Clubs</span>
+                            <span class="f-subtitle">Chess, sports & coding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,90.13,27.35,170.73,49.41,250.68,61.85,321.39,56.44Z" fill="var(--bg-secondary)"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section section-problem bg-sec" id="problem">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">The Current Challenge</span>
+                <h2 class="section-title">Students Need More Than Just Marks</h2>
+                <p class="section-desc">Traditional schools focus heavily on grades, but standard testing leaves students unprepared for the competitive, multi-dimensional world outside.</p>
+            </div>
+            
+            <div class="grid grid-3 problem-grid">
+                <div class="card problem-card">
+                    <div class="problem-icon"><i data-lucide="compass"></i></div>
+                    <h3>Career Confusion</h3>
+                    <p>Many students choose careers blindly based on peer pressure, lack of knowledge, or parental coercion, rather than alignment with natural skills.</p>
+                </div>
+                <div class="card problem-card">
+                    <div class="problem-icon"><i data-lucide="shield-alert"></i></div>
+                    <h3>Lack of Confidence</h3>
+                    <p>Scoring well in exams doesn't guarantee the confidence required to stand on a stage, present concepts, or interview effectively.</p>
+                </div>
+                <div class="card problem-card">
+                    <div class="problem-icon"><i data-lucide="message-square"></i></div>
+                    <h3>Poor Communication</h3>
+                    <p>Inability to articulate ideas, speak fluent English, or express opinions clearly restricts college admission and professional opportunities.</p>
+                </div>
+                <div class="card problem-card">
+                    <div class="problem-icon"><i data-lucide="smartphone"></i></div>
+                    <h3>Mobile Addiction</h3>
+                    <p>Increasing isolation and screen times have replaced offline physical sports, social interaction, and constructive hobbies.</p>
+                </div>
+                <div class="card problem-card">
+                    <div class="problem-icon"><i data-lucide="user-x"></i></div>
+                    <h3>No Mentorship</h3>
+                    <p>Absence of role models who can guide students through the complex transitions from school to colleges to the corporate world.</p>
+                </div>
+                <div class="card problem-card">
+                    <div class="problem-icon"><i data-lucide="eye-off"></i></div>
+                    <h3>Limited Exposure</h3>
+                    <p>Students from tier-2/3 cities and standard curricula rarely get exposed to emerging tech, design, leadership, and startup ecosystems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section section-solution" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Our Solution</span>
+                <h2 class="section-title">One Platform. Multiple Growth Opportunities.</h2>
+                <p class="section-desc">We foster micro-learning and active participation to build confidence, leadership, and curiosity outside standard textbooks.</p>
+            </div>
+
+            <div class="grid grid-4 solution-grid">
+                <div class="solution-card">
+                    <div class="sol-emoji">🏸</div>
+                    <h3>Sports Development</h3>
+                    <p>Building fitness, tactical skills, discipline, and active team spirit through physical sports training.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="sol-emoji">♟️</div>
+                    <h3>Chess Club</h3>
+                    <p>Sharpening cognitive thinking, logic, deep focus, patience, and competitive strategic vision.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="sol-emoji">🎤</div>
+                    <h3>Communication Skills</h3>
+                    <p>Eliminating stage-fright through public speaking drills, presentations, and conversational English.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="sol-emoji">🚀</div>
+                    <h3>Career Awareness</h3>
+                    <p>Exposing students to non-traditional fields, industry requirements, and modern digital career tracks.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="sol-emoji">💻</div>
+                    <h3>Technology Exposure</h3>
+                    <p>Interactive sessions explaining AI tools, basic coding logic, web interfaces, and cybersecurity safety.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="sol-emoji">👨‍🏫</div>
+                    <h3>Mentorship</h3>
+                    <p>Direct interaction with software engineers, designers, athletes, and experts who have achieved real-world success.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="sol-emoji">🌱</div>
+                    <h3>Personality Dev</h3>
+                    <p>Instilling life skills like critical thinking, empathy, financial basics, time management, and hygiene.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="sol-emoji">🏆</div>
+                    <h3>Leadership Building</h3>
+                    <p>Encouraging students to moderate clubs, lead event organizations, and build ownership attributes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section (Timeline) -->
+    <section class="section section-timeline bg-sec" id="how-it-works">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">The Roadmap</span>
+                <h2 class="section-title">How Future Seeds Works</h2>
+                <p class="section-desc">Our systematic approach helps transition students from passive learners to active leaders.</p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item left scroll-animate">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Join Community</h3>
+                        <p>Register as a student, join active local WhatsApp community hubs, and connect with peers.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right scroll-animate">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Discover Interests</h3>
+                        <p>Participate in free diagnostic webinars, interactive trials, and orientations to identify core strengths.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left scroll-animate">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Participate in Clubs</h3>
+                        <p>Enroll in sports development, Chess tournaments, speaking bootcamps, and coding hackathons.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right scroll-animate">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Learn from Mentors</h3>
+                        <p>Gain advice, practical life lessons, and feedback through interactive webinars with industry experts.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left scroll-animate">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h3>Track Growth</h3>
+                        <p>Evaluate development with self-assessment check-ins, confidence charts, and badge awards.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right scroll-animate">
+                    <div class="timeline-number">6</div>
+                    <div class="timeline-content">
+                        <h3>Become Future Ready</h3>
+                        <p>Graduate with self-confidence, networking experience, foundational technology skills, and career focus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs & Clubs Section -->
+    <section class="section section-programs" id="programs">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Clubs & Training Modules</span>
+                <h2 class="section-title">Programs Specially Designed for Action</h2>
+                <p class="section-desc">Learning happens by doing. Browse our clubs and programs to choose what fits your child's schedule.</p>
+            </div>
+
+            <div class="grid grid-3 program-grid">
+                <!-- Badminton Club -->
+                <div class="program-card-detail">
+                    <div class="prog-icon green"><i data-lucide="shield"></i></div>
+                    <h3>Badminton Club</h3>
+                    <p class="prog-desc">Structured badminton training emphasizing stamina, footwork, hand-eye coordination, and active participation in local leagues.</p>
+                    <ul class="prog-benefits">
+                        <li><i data-lucide="check"></i> 3 sessions per week</li>
+                        <li><i data-lucide="check"></i> Cardiovascular strength</li>
+                        <li><i data-lucide="check"></i> Refined tactical defense & smash</li>
+                    </ul>
+                    <button class="btn btn-secondary w-full open-event-modal" data-subject="Badminton Club Registration">Join Badminton Club</button>
+                </div>
+
+                <!-- Chess Club -->
+                <div class="program-card-detail">
+                    <div class="prog-icon yellow"><i data-lucide="smile"></i></div>
+                    <h3>Chess Club</h3>
+                    <p class="prog-desc">Comprehensive tactics and puzzle training combined with monthly tournaments to nurture sharp logical minds.</p>
+                    <ul class="prog-benefits">
+                        <li><i data-lucide="check"></i> Grandmaster openings syllabus</li>
+                        <li><i data-lucide="check"></i> Interactive analysis sessions</li>
+                        <li><i data-lucide="check"></i> Focus, memory & strategy</li>
+                    </ul>
+                    <button class="btn btn-secondary w-full open-event-modal" data-subject="Chess Club Registration">Join Chess Club</button>
+                </div>
+
+                <!-- Spoken English Program -->
+                <div class="program-card-detail">
+                    <div class="prog-icon green"><i data-lucide="message-square"></i></div>
+                    <h3>Spoken English Program</h3>
+                    <p class="prog-desc">Activity-based learning covering conversational fluency, staging presence, group discussion rules, and presentation design.</p>
+                    <ul class="prog-benefits">
+                        <li><i data-lucide="check"></i> Stage-fright elimination drills</li>
+                        <li><i data-lucide="check"></i> Rich accent & vocabulary</li>
+                        <li><i data-lucide="check"></i> Group discussions & debates</li>
+                    </ul>
+                    <button class="btn btn-secondary w-full open-event-modal" data-subject="Spoken English Program Registration">Enroll in Spoken English</button>
+                </div>
+
+                <!-- Career Awareness Sessions -->
+                <div class="program-card-detail">
+                    <div class="prog-icon yellow"><i data-lucide="graduation-cap"></i></div>
+                    <h3>Career Awareness</h3>
+                    <p class="prog-desc">Interactive discussions explaining standard engineering, arts, medicine, along with new-age design, AI, writing, and sports administration.</p>
+                    <ul class="prog-benefits">
+                        <li><i data-lucide="check"></i> Expert panel sessions</li>
+                        <li><i data-lucide="check"></i> Step-by-step career path map</li>
+                        <li><i data-lucide="check"></i> 1-on-1 Q&A sessions</li>
+                    </ul>
+                    <button class="btn btn-secondary w-full open-event-modal" data-subject="Career Awareness Registration">Register for Session</button>
+                </div>
+
+                <!-- Technology Sessions -->
+                <div class="program-card-detail">
+                    <div class="prog-icon green"><i data-lucide="code-2"></i></div>
+                    <h3>Technology Sessions</h3>
+                    <p class="prog-desc">Understanding software logic, web creation basics, safe use of artificial intelligence, and online security awareness.</p>
+                    <ul class="prog-benefits">
+                        <li><i data-lucide="check"></i> Code-free creation exercises</li>
+                        <li><i data-lucide="check"></i> AI prompt engineering tips</li>
+                        <li><i data-lucide="check"></i> Online safety & hygiene</li>
+                    </ul>
+                    <button class="btn btn-secondary w-full open-event-modal" data-subject="Technology Sessions Registration">Register for Tech Session</button>
+                </div>
+
+                <!-- Leadership Programs -->
+                <div class="program-card-detail">
+                    <div class="prog-icon yellow"><i data-lucide="award"></i></div>
+                    <h3>Leadership Programs</h3>
+                    <p class="prog-desc">Enables students to own and organize tournaments, coordinate speaking assemblies, and mentor juniors in various clubs.</p>
+                    <ul class="prog-benefits">
+                        <li><i data-lucide="check"></i> Practical event coordination</li>
+                        <li><i data-lucide="check"></i> Team management experience</li>
+                        <li><i data-lucide="check"></i> Accountability & feedback loops</li>
+                    </ul>
+                    <button class="btn btn-secondary w-full open-event-modal" data-subject="Leadership Program Registration">Apply for Leadership</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Counters Section -->
+    <section class="section section-impact bg-sec" id="impact">
+        <div class="container text-center">
+            <div class="section-header text-center">
+                <span class="subtitle">Making a Difference</span>
+                <h2 class="section-title">Our Growth & Impact Numbers</h2>
+                <p class="section-desc">Measurable indicators representing our commitment to student development.</p>
+            </div>
+            
+            <div class="grid grid-5 impact-grid">
+                <div class="impact-item">
+                    <div class="impact-icon"><i data-lucide="users-2"></i></div>
+                    <span class="impact-number counter" data-target="1500">0</span><span class="impact-plus">+</span>
+                    <p class="impact-label">Students Enrolled</p>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon"><i data-lucide="heart"></i></div>
+                    <span class="impact-number counter" data-target="800">0</span><span class="impact-plus">+</span>
+                    <p class="impact-label">Parents Connected</p>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon"><i data-lucide="user-check"></i></div>
+                    <span class="impact-number counter" data-target="50">0</span><span class="impact-plus">+</span>
+                    <p class="impact-label">Mentors Associated</p>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon"><i data-lucide="calendar"></i></div>
+                    <span class="impact-number counter" data-target="150">0</span><span class="impact-plus">+</span>
+                    <p class="impact-label">Events Conducted</p>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon"><i data-lucide="clock"></i></div>
+                    <span class="impact-number counter" data-target="5000">0</span><span class="impact-plus">+</span>
+                    <p class="impact-label">Hours of Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories (Slider) -->
+    <section class="section section-testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Testimonials</span>
+                <h2 class="section-title">Success Stories from Our Community</h2>
+                <p class="section-desc">Hear directly from the students, parents, and mentors who are shaping Future Seeds.</p>
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="slider-container" id="slider-container">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i data-lucide="quote"></i></div>
+                            <p class="testimonial-text">"I used to be extremely scared of speaking in public. After joining the Spoken English program and hosting a Chess club event, I can confidently present my ideas without stage fear. The interactive debates changed how I communicate."</p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar green-bg">AS</div>
+                                <div class="user-info">
+                                    <span class="user-name">Aditi Sharma</span>
+                                    <span class="user-role">Student, Class 10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i data-lucide="quote"></i></div>
+                            <p class="testimonial-text">"Future Seeds has done wonders for my son. He has reduced his mobile screen time significantly and now looks forward to the weekly Badminton sessions and chess matches. His physical activity and focus levels have increased."</p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar yellow-bg">RV</div>
+                                <div class="user-info">
+                                    <span class="user-name">Rajesh Verma</span>
+                                    <span class="user-role">Parent of Class 8 Student</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i data-lucide="quote"></i></div>
+                            <p class="testimonial-text">"Guiding these enthusiastic students has been an incredibly fulfilling experience. Future Seeds is filling a critical gap in our education system by exposing youth to software programming, web tech, and practical career fields early on."</p>
+                            <div class="testimonial-user">
+                                <div class="user-avatar green-bg">SP</div>
+                                <div class="user-info">
+                                    <span class="user-name">Sneha Patel</span>
+                                    <span class="user-role">Software Engineer & Mentor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-arrow prev" id="slider-prev" aria-label="Previous Testimonial">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="slider-dot active" data-index="0"></span>
+                        <span class="slider-dot" data-index="1"></span>
+                        <span class="slider-dot" data-index="2"></span>
+                    </div>
+                    <button class="slider-arrow next" id="slider-next" aria-label="Next Testimonial">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Awareness / Upcoming Events -->
+    <section class="section section-career bg-sec" id="career-awareness">
+        <div class="container">
+            <div class="grid grid-2 career-grid">
+                <div class="career-info-block">
+                    <span class="subtitle">Industry Readiness</span>
+                    <h2 class="section-title">Career Awareness Sessions</h2>
+                    <p>We invite specialists from Tech, Design, Management, Defense, and Arts to host structured webinars, providing real-world guidance and resolving career queries.</p>
+                    
+                    <div class="career-features">
+                        <div class="c-feature">
+                            <div class="cf-icon"><i data-lucide="video"></i></div>
+                            <div>
+                                <h4>Interactive Online Webinars</h4>
+                                <p>Live digital interactions with standard Q&A features.</p>
+                            </div>
+                        </div>
+                        <div class="c-feature">
+                            <div class="cf-icon"><i data-lucide="award"></i></div>
+                            <div>
+                                <h4>Industry Experts</h4>
+                                <p>Learn directly from professionals working in leading Global firms.</p>
+                            </div>
+                        </div>
+                        <div class="c-feature">
+                            <div class="cf-icon"><i data-lucide="compass"></i></div>
+                            <div>
+                                <h4>Structured Career Guidance</h4>
+                                <p>Receive action paths and resource recommendations.</p>
+                            </div>
+                        </div>
+                        <div class="c-feature">
+                            <div class="cf-icon"><i data-lucide="sparkles"></i></div>
+                            <div>
+                                <h4>Emerging Future Skills</h4>
+                                <p>Exposure to Artificial Intelligence, Robotics, and Digital Media fields.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upcoming-events-block">
+                    <h3 class="events-title">Upcoming Live Sessions</h3>
+                    <div class="events-list">
+                        <!-- Event 1 -->
+                        <div class="event-card">
+                            <div class="event-date-badge">
+                                <span class="month">JUN</span>
+                                <span class="day">15</span>
+                            </div>
+                            <div class="event-details">
+                                <span class="event-tag">Technology</span>
+                                <h4>Careers in AI & Tech</h4>
+                                <p class="event-meta"><i data-lucide="clock"></i> 5:00 PM - 6:30 PM | <i data-lucide="user"></i> Sneha Patel (SDE)</p>
+                                <button class="btn btn-secondary btn-sm open-event-modal" data-subject="Careers in AI & Tech Webinar">Register Free</button>
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="event-card">
+                            <div class="event-date-badge">
+                                <span class="month">JUN</span>
+                                <span class="day">22</span>
+                            </div>
+                            <div class="event-details">
+                                <span class="event-tag">Soft Skills</span>
+                                <h4>Public Speaking & Stage Presence</h4>
+                                <p class="event-meta"><i data-lucide="clock"></i> 4:00 PM - 5:30 PM | <i data-lucide="user"></i> Kshiteej Ramgundewar</p>
+                                <button class="btn btn-secondary btn-sm open-event-modal" data-subject="Public Speaking Webinar">Register Free</button>
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="event-card">
+                            <div class="event-date-badge">
+                                <span class="month">JUN</span>
+                                <span class="day">29</span>
+                            </div>
+                            <div class="event-details">
+                                <span class="event-tag">Creativity</span>
+                                <h4>Introduction to Design Thinking</h4>
+                                <p class="event-meta"><i data-lucide="clock"></i> 6:00 PM - 7:30 PM | <i data-lucide="user"></i> Rohan Deshmukh (UI/UX)</p>
+                                <button class="btn btn-secondary btn-sm open-event-modal" data-subject="Design Thinking Webinar">Register Free</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Mentor Section -->
+    <section class="section section-mentor-call">
+        <div class="container text-center mentor-box">
+            <span class="subtitle">Give Back to Society</span>
+            <h2 class="section-title text-white">Share Your Wisdom. Become a Mentor.</h2>
+            <p class="mentor-lead">Inspire students from diverse backgrounds, lead career webinars, and help shape the future of India's youth.</p>
+            
+            <div class="grid grid-3 mentor-benefits-grid text-left">
+                <div class="mb-card">
+                    <div class="mb-icon"><i data-lucide="sparkles"></i></div>
+                    <h4>Create Real Impact</h4>
+                    <p>Guide young learners in discovering non-traditional fields, boosting their life confidence.</p>
+                </div>
+                <div class="mb-card">
+                    <div class="mb-icon"><i data-lucide="heart"></i></div>
+                    <h4>Empower Students</h4>
+                    <p>Share your academic and corporate paths to reduce anxiety and build solid action plans.</p>
+                </div>
+                <div class="mb-card">
+                    <div class="mb-icon"><i data-lucide="users"></i></div>
+                    <h4>Build Community</h4>
+                    <p>Collaborate with like-minded corporate leaders, athletes, and educators supporting youth growth.</p>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary btn-lg open-mentor-modal">Become a Mentor Now</button>
+        </div>
+    </section>
+
+    <!-- Partner With Us Section -->
+    <section class="section section-partner bg-sec">
+        <div class="container partner-container">
+            <div class="partner-text">
+                <span class="subtitle">Collaboration</span>
+                <h2 class="section-title">Partner With Future Seeds</h2>
+                <p>We work closely with various organizations to host offline sports hubs, digital workshops, and personality development drives.</p>
+                
+                <div class="partner-targets">
+                    <div class="pt-item"><i data-lucide="check-circle-2"></i> <span><strong>Schools</strong>: Setup sports clubs, chess hubs, and confidence bootcamps on your campus.</span></div>
+                    <div class="pt-item"><i data-lucide="check-circle-2"></i> <span><strong>CSR Partners</strong>: Fund regional career orientation and tech literacy drives in rural pockets.</span></div>
+                    <div class="pt-item"><i data-lucide="check-circle-2"></i> <span><strong>NGOs & Clubs</strong>: Co-organize community events, competitive sports leagues, and public speaking camps.</span></div>
+                    <div class="pt-item"><i data-lucide="check-circle-2"></i> <span><strong>Volunteers</strong>: Manage student chapters and support administrative work.</span></div>
+                </div>
+                <button class="btn btn-secondary btn-lg open-event-modal" data-subject="Organization Partnership Request">Partner With Us</button>
+            </div>
+            
+            <div class="partner-graphics">
+                <!-- SVG graphics simulating partnerships -->
+                <svg viewBox="0 0 400 300" class="partner-svg">
+                    <rect x="50" y="50" width="120" height="90" rx="8" fill="var(--bg-primary)" stroke="var(--border-color)" stroke-width="2" />
+                    <circle cx="110" cy="85" r="15" fill="#2F7C31" opacity="0.2" />
+                    <path d="M100 85 L110 95 L125 75" fill="none" stroke="#2F7C31" stroke-width="2" stroke-linecap="round" />
+                    <text x="110" y="125" text-anchor="middle" font-size="12" font-family="Outfit" fill="var(--text-primary)" font-weight="600">Schools</text>
+
+                    <rect x="230" y="50" width="120" height="90" rx="8" fill="var(--bg-primary)" stroke="var(--border-color)" stroke-width="2" />
+                    <path d="M290 70 L305 85 L290 100 L275 85 Z" fill="#F4D03F" opacity="0.3" />
+                    <circle cx="290" cy="85" r="10" fill="#F4D03F" />
+                    <text x="290" y="125" text-anchor="middle" font-size="12" font-family="Outfit" fill="var(--text-primary)" font-weight="600">CSR Partners</text>
+
+                    <rect x="50" y="180" width="120" height="90" rx="8" fill="var(--bg-primary)" stroke="var(--border-color)" stroke-width="2" />
+                    <circle cx="110" cy="215" r="15" fill="#F4D03F" opacity="0.2" />
+                    <path d="M98 220 C98 210 122 210 122 220" fill="none" stroke="#2F7C31" stroke-width="2" />
+                    <circle cx="110" cy="210" r="4" fill="#2F7C31" />
+                    <text x="110" y="255" text-anchor="middle" font-size="12" font-family="Outfit" fill="var(--text-primary)" font-weight="600">NGOs</text>
+
+                    <rect x="230" y="180" width="120" height="90" rx="8" fill="var(--bg-primary)" stroke="var(--border-color)" stroke-width="2" />
+                    <circle cx="290" cy="215" r="15" fill="#2F7C31" opacity="0.2" />
+                    <path d="M280 215 H300 M290 205 V225" stroke="#2F7C31" stroke-width="2.5" stroke-linecap="round" />
+                    <text x="290" y="255" text-anchor="middle" font-size="12" font-family="Outfit" fill="var(--text-primary)" font-weight="600">Volunteers</text>
+                    
+                    <path d="M170 95 L230 95" stroke="var(--border-color)" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <path d="M170 225 L230 225" stroke="var(--border-color)" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <path d="M110 140 L110 180" stroke="var(--border-color)" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <path d="M290 140 L290 180" stroke="var(--border-color)" stroke-width="1.5" stroke-dasharray="4 4" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section-gallery" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Moments in Action</span>
+                <h2 class="section-title">Our Hub Gallery</h2>
+                <p class="section-desc">Witness our activities, outdoor training camps, active workshops, and mentor webinars in action.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="chess">Chess</button>
+                <button class="filter-btn" data-filter="workshops">Workshops</button>
+                <button class="filter-btn" data-filter="mentorship">Mentorship</button>
+            </div>
+
+            <!-- Masonry Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item sports" data-title="Badminton Hub Practice" data-desc="Students practicing footwork drills and active smash techniques at our local sports hub.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-1">
+                            <img src="Photos/badminton 1.jpeg" alt="Badminton Hub Practice" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Badminton Hub Practice</h4>
+                            <span class="gallery-tag">Sports</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item chess" data-title="Chess League Finals" data-desc="Focus and strategy match in play during our junior rapid chess event.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-2">
+                            <img src="Photos/Chess 1.jpeg" alt="Chess League Finals" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Chess League Finals</h4>
+                            <span class="gallery-tag">Chess</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item workshops" data-title="Spoken English Assembly" data-desc="Class 8-10 students hosting a mini presentation session on stage.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-3">
+                            <img src="Photos/Spoken English.png" alt="Spoken English Assembly" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Spoken English Assembly</h4>
+                            <span class="gallery-tag">Workshops</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item mentorship" data-title="School Collaboration Program" data-desc="Setup of active sports clubs and confidence bootcamps on local campuses.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-4">
+                            <img src="Photos/School Collabration.jpeg" alt="School Collaboration Program" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>School Collaborations</h4>
+                            <span class="gallery-tag">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item sports" data-title="Weekly Badminton Training" data-desc="Refining court movement and serving skills during our weekend sports clinic.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-5">
+                            <img src="Photos/badminton 2.jpeg" alt="Weekly Badminton Training" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Badminton Clinic</h4>
+                            <span class="gallery-tag">Sports</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item chess" data-title="Tactics & Analysis Session" data-desc="Students learning the fundamentals of spatial control and tactical endgame sacrifices.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-6">
+                            <img src="Photos/Chess 2.jpeg" alt="Tactics & Analysis Session" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Tactics & Analysis</h4>
+                            <span class="gallery-tag">Chess</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item sports" data-title="Smash & Footwork Drills" data-desc="Dynamic smash drills designed to build stamina and speed on the court.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-1">
+                            <img src="Photos/badminton 3.jpeg" alt="Smash & Footwork Drills" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Smash & Footwork</h4>
+                            <span class="gallery-tag">Sports</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item sports" data-title="Badminton Academy Group" data-desc="Our junior badminton academy cohort wrapping up their seasonal training phase.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-2">
+                            <img src="Photos/badminton 4.jpeg" alt="Badminton Academy Group" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Badminton Academy Group</h4>
+                            <span class="gallery-tag">Sports</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item mentorship" data-title="From Small Town to Big Impact" data-desc="Webinar poster for the career awareness session guided by Shri. Khurshid Kutubuddin Sheikh.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-3">
+                            <img src="Photos/Mentorship 5.jpg" alt="Career Awareness Poster" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Career Awareness Poster</h4>
+                            <span class="gallery-tag">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item mentorship" data-title="Live Mentorship Interaction" data-desc="National Awardee Teacher Shri. Khurshid Sheikh sharing key career guidance with students.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-4">
+                            <img src="Photos/Mentorship 1.png" alt="Live Mentorship Interaction" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Live Mentorship Session</h4>
+                            <span class="gallery-tag">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item mentorship" data-title="Learning Beyond Textbooks" data-desc="Exploring career opportunities and digital learning models during our interactive webinar.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-5">
+                            <img src="Photos/Mentorship 3.png" alt="Learning Beyond Textbooks" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Learning Beyond Textbooks</h4>
+                            <span class="gallery-tag">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item mentorship" data-title="Bridges of Friendship" data-desc="Students participating in collaborative digital mentorship sessions during our career awareness week.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-6">
+                            <img src="Photos/Mentorship 2.png" alt="Bridges of Friendship" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Bridges of Friendship</h4>
+                            <span class="gallery-tag">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 13 -->
+                <div class="gallery-item mentorship" data-title="Career Opportunities Discussion" data-desc="Guiding youth through emerging professional paths and skill-building activities.">
+                    <div class="gallery-card">
+                        <div class="gallery-card-placeholder gradient-1">
+                            <img src="Photos/Mentorship 4.png" alt="Career Opportunities Discussion" class="gallery-img">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Career Opportunities</h4>
+                            <span class="gallery-tag">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Mock Feed -->
+    <section class="section section-instagram bg-sec">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Social Connection</span>
+                <h2 class="section-title">Follow Us On Instagram</h2>
+                <p class="section-desc">Stay updated with snippets of weekly chess standings, badminton highlights, and program announcements.</p>
+            </div>
+
+            <div class="grid grid-4 instagram-grid">
+                <!-- Post 1 -->
+                <a href="https://www.instagram.com/futureseeds.in/" target="_blank" rel="noopener" class="instagram-card">
+                    <div class="insta-img-placeholder">
+                        <img src="Photos/badminton 3.jpeg" alt="Badminton smash highlights" class="insta-img">
+                        <div class="insta-overlay">
+                            <span class="likes"><i data-lucide="heart"></i> 142</span>
+                            <span class="comments"><i data-lucide="message-circle"></i> 18</span>
+                        </div>
+                    </div>
+                    <div class="insta-caption">
+                        <p>🏸 Smash of the week! Smashing goals and improving stamina at our Badminton training academy... <strong>#FutureSeeds #Badminton</strong></p>
+                    </div>
+                </a>
+
+                <!-- Post 2 -->
+                <a href="https://www.instagram.com/futureseeds.in/" target="_blank" rel="noopener" class="instagram-card">
+                    <div class="insta-img-placeholder">
+                        <img src="Photos/Chess 1.jpeg" alt="Chess club finals" class="insta-img">
+                        <div class="insta-overlay">
+                            <span class="likes"><i data-lucide="heart"></i> 98</span>
+                            <span class="comments"><i data-lucide="message-circle"></i> 9</span>
+                        </div>
+                    </div>
+                    <div class="insta-caption">
+                        <p>♟️ Strategy, patience, and logic in play during yesterday's Chess Club finals... <strong>#ChessClub #YouthMinds</strong></p>
+                    </div>
+                </a>
+
+                <!-- Post 3 -->
+                <a href="https://www.instagram.com/futureseeds.in/" target="_blank" rel="noopener" class="instagram-card">
+                    <div class="insta-img-placeholder">
+                        <img src="Photos/Spoken English.png" alt="Spoken English program" class="insta-img">
+                        <div class="insta-overlay">
+                            <span class="likes"><i data-lucide="heart"></i> 204</span>
+                            <span class="comments"><i data-lucide="message-circle"></i> 32</span>
+                        </div>
+                    </div>
+                    <div class="insta-caption">
+                        <p>🎤 Stage fear who? Watch our spoken english program students host a successful debate event... <strong>#SpokenEnglish #Confidence</strong></p>
+                    </div>
+                </a>
+
+                <!-- Post 4 -->
+                <a href="https://www.instagram.com/futureseeds.in/" target="_blank" rel="noopener" class="instagram-card">
+                    <div class="insta-img-placeholder">
+                        <img src="Photos/School Collabration.jpeg" alt="School Collaboration program" class="insta-img">
+                        <div class="insta-overlay">
+                            <span class="likes"><i data-lucide="heart"></i> 188</span>
+                            <span class="comments"><i data-lucide="message-circle"></i> 24</span>
+                        </div>
+                    </div>
+                    <div class="insta-caption">
+                        <p>🌱 Collaboration is key! Establishing offline sports clusters, chess matches, and confidence bootcamps with local schools... <strong>#SchoolCollaboration #Mentorship</strong></p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="https://www.instagram.com/futureseeds.in/" target="_blank" rel="noopener" class="btn btn-secondary"><i data-lucide="instagram"></i> View Instagram Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Features / Roadmap Section -->
+    <section class="section section-roadmap">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">The Future Vision</span>
+                <h2 class="section-title">Product Roadmap & Ecosystem</h2>
+                <p class="section-desc">Here is what we are planning as we scale our tools and resources to support student development.</p>
+            </div>
+
+            <div class="roadmap-grid">
+                <!-- Phase 1 -->
+                <div class="roadmap-card active">
+                    <div class="phase-badge">Phase 1</div>
+                    <h3>Student Clubs & Hubs</h3>
+                    <p>Establishing localized offline physical sports clusters, chess matches, and online spoken english hubs. (Ongoing)</p>
+                    <span class="status-indicator">Active</span>
+                </div>
+                <!-- Phase 2 -->
+                <div class="roadmap-card">
+                    <div class="phase-badge">Phase 2</div>
+                    <h3>Growth Tracking Dashboard</h3>
+                    <p>A personalized student portal to record chess ELO, badminton stamina scores, public speaking confidence, and logic assessments.</p>
+                    <span class="status-indicator waiting">Planned Q4 2026</span>
+                </div>
+                <!-- Phase 3 -->
+                <div class="roadmap-card">
+                    <div class="phase-badge">Phase 3</div>
+                    <h3>Career Discovery Platform</h3>
+                    <p>Custom assessment tests mapping student skills and feedback directly to career webinars led by industry specialists.</p>
+                    <span class="status-indicator waiting">Planned Q2 2027</span>
+                </div>
+                <!-- Phase 4 -->
+                <div class="roadmap-card">
+                    <div class="phase-badge">Phase 4</div>
+                    <h3>AI-Powered Growth System</h3>
+                    <p>AI models evaluating learning styles and recommending specialized soft-skill, sports, and tech tracks to shape future careers.</p>
+                    <span class="status-indicator waiting">Planned Q1 2028</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-faq bg-sec" id="faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Common Queries</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Clear information for students, parents, and prospective mentors.</p>
+            </div>
+
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is Future Seeds?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Future Seeds is an active student growth startup focusing on skills outside academic grades. We offer coaching in sports (Badminton, Chess), communication mastery (Spoken English), tech literacy, and career awareness webinars led by experts.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Who is eligible to join the programs?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our clubs support school students (classes 5th-12th), college students planning careers, and online students (enrolled in platforms like PhysicsWallah, Allen, Unacademy, Byju's, or online degree programs) seeking practical life skills and offline balance.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are these programs online or offline?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We use a hybrid delivery format. Physical sports clubs (Badminton and Chess) are hosted at local regional sports hubs. Soft-skill bootcamps, coding workshops, and career panels are organized online to ensure access to top global experts for everyone.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I register as an industry mentor?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Click the "Become a Mentor" button. Fill in details about your profession, company, and area of expertise. Our founding team will review your application and host an introductory session for onboarding.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there a fee for joining?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>General career awareness webinars, community discussions, and onboarding assessments are free. Our weekly structured sports hubs (Badminton / Chess) and intensive spoken English bootcamps require a nominal subscription to cover professional coaching and equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Feedback Section -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="subtitle">Let's Connect</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>Have questions about session schedules, fees, or how to establish a hub at your local school? Reach out to us.</p>
+                    
+                    <div class="founder-card">
+                        <div class="founder-avatar">KR</div>
+                        <div>
+                            <h4>Kshiteej Ramgundewar</h4>
+                            <p class="founder-role">Founder, Future Seeds</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-details-list">
+                        <div class="cd-item">
+                            <i data-lucide="mail"></i>
+                            <span>contact@futureseeds.in</span>
+                        </div>
+                        <div class="cd-item">
+                            <i data-lucide="phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="cd-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Maharashtra, India</span>
+                        </div>
+                    </div>
+
+                    <div class="social-channels">
+                        <h4>Join Our Social Handles</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/futureseeds.in/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn btn-whatsapp w-full text-center">
+                            <i data-lucide="message-square"></i> Join WhatsApp Community
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-block">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="c-name">Full Name</label>
+                            <input type="text" id="c-name" name="name" placeholder="Enter your name" required>
+                            <span class="error-msg">Name is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-phone">Phone Number</label>
+                            <input type="tel" id="c-phone" name="phone" placeholder="Enter your 10-digit number" required>
+                            <span class="error-msg">Enter a valid 10-digit phone number</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-email">Email Address</label>
+                            <input type="email" id="c-email" name="email" placeholder="Enter your email address" required>
+                            <span class="error-msg">Enter a valid email address</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-msg">Your Message</label>
+                            <textarea id="c-msg" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                            <span class="error-msg">Message is required</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">
+                    <img src="logo.png" alt="Future Seeds Logo" class="logo-img">
+                    <span>Future<span class="logo-accent">Seeds</span></span>
+                </a>
+                <p class="footer-mission">To help students discover their potential, build confidence, gain real-world exposure, and become future-ready.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/futureseeds.in/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#impact">Our Impact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="#programs">Badminton Club</a></li>
+                    <li><a href="#programs">Chess Club</a></li>
+                    <li><a href="#programs">Spoken English</a></li>
+                    <li><a href="#career-awareness">Career Sessions</a></li>
+                    <li><a href="#programs">Technology Sessions</a></li>
+                    <li><a href="#programs">Leadership Programs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p><strong>Founder:</strong> Kshiteej Ramgundewar</p>
+                <p><i data-lucide="mail"></i> contact@futureseeds.in</p>
+                <p><i data-lucide="phone"></i> +91 98765 43210</p>
+                <p><i data-lucide="map-pin"></i> Maharashtra, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Future Seeds. All Rights Reserved. Crafted with ❤️ for India's student community.</p>
+        </div>
+    </footer>
+
+    <!-- Overlay Modals -->
+    
+    <!-- 1. Student Registration Modal -->
+    <div class="modal-overlay" id="modal-student">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close Modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h2>Join Future Seeds 🌱</h2>
+                <p>Register as a student or parent to join our active learning chapters.</p>
+            </div>
+            <form class="modal-form" id="student-reg-form" novalidate>
+                <div class="form-group">
+                    <label for="s-name">Full Name</label>
+                    <input type="text" id="s-name" name="name" placeholder="Enter student/parent name" required>
+                    <span class="error-msg">Full name is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="s-role">I am registering as a:</label>
+                    <select id="s-role" name="role" required>
+                        <option value="" disabled selected>Select option</option>
+                        <option value="student-school">School Student (5th - 12th)</option>
+                        <option value="student-college">College Student</option>
+                        <option value="student-online">Online Learner (PW, Allen, etc.)</option>
+                        <option value="parent">Parent</option>
+                    </select>
+                    <span class="error-msg">Please select your role</span>
+                </div>
+                <div class="form-group">
+                    <label for="s-org">School / College Name</label>
+                    <input type="text" id="s-org" name="organization" placeholder="e.g., Springdale School" required>
+                    <span class="error-msg">School or platform name is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="s-phone">Phone Number</label>
+                    <input type="tel" id="s-phone" name="phone" placeholder="Enter 10-digit mobile number" required>
+                    <span class="error-msg">Enter a valid 10-digit phone number</span>
+                </div>
+                <div class="form-group">
+                    <label for="s-email">Email Address</label>
+                    <input type="email" id="s-email" name="email" placeholder="Enter email address" required>
+                    <span class="error-msg">Enter a valid email address</span>
+                </div>
+                <div class="form-group">
+                    <label for="s-interests">Program of Interest</label>
+                    <select id="s-interests" name="interest" required>
+                        <option value="" disabled selected>Select program</option>
+                        <option value="badminton">Badminton Club</option>
+                        <option value="chess">Chess Club</option>
+                        <option value="english">Spoken English Program</option>
+                        <option value="career">Career Awareness Webinars</option>
+                        <option value="tech">Technology Exposure Sessions</option>
+                        <option value="leadership">Leadership Programs</option>
+                        <option value="general">General Community Join</option>
+                    </select>
+                    <span class="error-msg">Please select an interest</span>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 2. Mentor Registration Modal -->
+    <div class="modal-overlay" id="modal-mentor">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close Modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h2>Become a Mentor 👨‍🏫</h2>
+                <p>Support our students by conducting sessions and providing guiding reviews.</p>
+            </div>
+            <form class="modal-form" id="mentor-reg-form" novalidate>
+                <div class="form-group">
+                    <label for="m-name">Full Name</label>
+                    <input type="text" id="m-name" name="name" placeholder="Enter your full name" required>
+                    <span class="error-msg">Name is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="m-job">Profession & Company</label>
+                    <input type="text" id="m-job" name="profession" placeholder="e.g., UI Designer at Google" required>
+                    <span class="error-msg">Profession is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="m-skills">Primary Skill / Area to Mentor</label>
+                    <input type="text" id="m-skills" name="skills" placeholder="e.g., Coding, Sports, Public Speaking" required>
+                    <span class="error-msg">Skill area is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="m-phone">Phone Number</label>
+                    <input type="tel" id="m-phone" name="phone" placeholder="Enter your phone number" required>
+                    <span class="error-msg">Enter a valid 10-digit phone number</span>
+                </div>
+                <div class="form-group">
+                    <label for="m-email">Email Address</label>
+                    <input type="email" id="m-email" name="email" placeholder="Enter your email address" required>
+                    <span class="error-msg">Enter a valid email address</span>
+                </div>
+                <div class="form-group">
+                    <label for="m-linkedin">LinkedIn Profile Link</label>
+                    <input type="url" id="m-linkedin" name="linkedin" placeholder="https://linkedin.com/in/username" required>
+                    <span class="error-msg">Enter a valid URL</span>
+                </div>
+                <div class="form-group">
+                    <label for="m-how">How would you like to contribute?</label>
+                    <select id="m-how" name="contribution" required>
+                        <option value="" disabled selected>Select contribution type</option>
+                        <option value="webinar">Conduct Live Online Webinars</option>
+                        <option value="local">Host Local Sports/Chess Hub meetups</option>
+                        <option value="one-on-one">1-on-1 Guidance review sessions</option>
+                        <option value="volunteering">Volunteering in administration</option>
+                    </select>
+                    <span class="error-msg">Select a contribution option</span>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 3. Event / Program Registration Modal -->
+    <div class="modal-overlay" id="modal-event">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close Modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h2>Register for Program/Event 📅</h2>
+                <p id="event-modal-subtitle">Register for the selected webinar or active club session.</p>
+            </div>
+            <form class="modal-form" id="event-reg-form" novalidate>
+                <input type="hidden" id="e-subject" name="subject" value="">
+                <div class="form-group">
+                    <label for="e-name">Full Name</label>
+                    <input type="text" id="e-name" name="name" placeholder="Enter your name" required>
+                    <span class="error-msg">Name is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="e-class">Class / Occupation</label>
+                    <input type="text" id="e-class" name="class" placeholder="e.g., Class 10 student, Software engineer" required>
+                    <span class="error-msg">Class or Occupation is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="e-phone">Phone Number</label>
+                    <input type="tel" id="e-phone" name="phone" placeholder="Enter your phone number" required>
+                    <span class="error-msg">Enter a valid 10-digit phone number</span>
+                </div>
+                <div class="form-group">
+                    <label for="e-email">Email Address</label>
+                    <input type="email" id="e-email" name="email" placeholder="Enter your email address" required>
+                    <span class="error-msg">Enter a valid email address</span>
+                </div>
+                <div class="form-group">
+                    <label for="e-msg">Any specific query / question for the host?</label>
+                    <textarea id="e-msg" name="message" rows="3" placeholder="Tell us if you have any questions..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 4. Lightbox Gallery Viewer Modal -->
+    <div class="modal-overlay lightbox-overlay" id="modal-lightbox">
+        <div class="lightbox-container">
+            <button class="lightbox-close" aria-label="Close Lightbox"><i data-lucide="x"></i></button>
+            <div class="lightbox-content">
+                <div class="lightbox-image-placeholder gradient-1" id="lightbox-img-box">
+                    <span class="lightbox-emoji" id="lightbox-emoji">🏸</span>
+                    <img src="" alt="" id="lightbox-img" class="lightbox-img">
+                </div>
+                <div class="lightbox-caption">
+                    <h3 id="lightbox-title">Title</h3>
+                    <p id="lightbox-desc">Description of the activity goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Notification Toast -->
+    <div class="toast" id="form-toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div>
+                <h4 class="toast-title">Success!</h4>
+                <p class="toast-desc">Your message has been sent successfully.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
