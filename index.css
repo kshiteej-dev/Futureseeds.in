@@ -2086,19 +2086,31 @@ body[data-theme="dark"] .cd-item svg {
 .social-channels h4 {
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
     color: var(--text-muted);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
 }
 
-.social-links {
+.social-links-vertical {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 24px;
 }
 
-.social-links a {
-    width: 40px;
-    height: 40px;
+.social-link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition-normal);
+}
+
+.social-icon-wrapper {
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background-color: var(--bg-tertiary);
     border: 1px solid var(--border-color);
@@ -2109,17 +2121,103 @@ body[data-theme="dark"] .cd-item svg {
     transition: var(--transition-fast);
 }
 
-.social-links a:hover {
+.social-icon-wrapper svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    stroke: currentColor;
+    fill: none;
+}
+
+.social-link-item:hover .social-icon-wrapper {
     background-color: var(--primary);
     color: #FFFFFF;
     border-color: var(--primary);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(47, 124, 49, 0.2);
 }
 
-body[data-theme="dark"] .social-links a:hover {
+body[data-theme="dark"] .social-link-item:hover .social-icon-wrapper {
     background-color: var(--accent);
     color: #0F172A;
     border-color: var(--accent);
+    box-shadow: 0 6px 16px rgba(244, 208, 63, 0.35);
+}
+
+.social-username {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+}
+
+.social-link-item:hover .social-username {
+    color: var(--text-primary);
+}
+
+/* WhatsApp Community Box styles */
+.whatsapp-community-box {
+    margin-top: 32px;
+    background: linear-gradient(135deg, rgba(47, 124, 49, 0.04) 0%, rgba(244, 208, 63, 0.04) 100%);
+    border: 1.5px dashed rgba(47, 124, 49, 0.3);
+    border-radius: var(--border-radius-md);
+    padding: 24px;
+    text-align: left;
+    transition: var(--transition-normal);
+}
+
+body[data-theme="dark"] .whatsapp-community-box {
+    background: linear-gradient(135deg, rgba(47, 124, 49, 0.08) 0%, rgba(244, 208, 63, 0.08) 100%);
+    border-color: rgba(244, 208, 63, 0.3);
+}
+
+.whatsapp-community-box:hover {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, rgba(47, 124, 49, 0.06) 0%, rgba(244, 208, 63, 0.06) 100%);
+}
+
+body[data-theme="dark"] .whatsapp-community-box:hover {
+    border-color: var(--accent);
+}
+
+.community-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.btn-whatsapp-community {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 28px;
+    font-weight: 700;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-fast);
+    cursor: pointer;
+    font-size: 15px;
+    gap: 10px;
+    border: none;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(47, 124, 49, 0.15);
+}
+
+body[data-theme="dark"] .btn-whatsapp-community {
+    background-color: var(--accent);
+    color: #0F172A;
+    box-shadow: 0 4px 15px rgba(244, 208, 63, 0.25);
+}
+
+.btn-whatsapp-community:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(47, 124, 49, 0.3);
+}
+
+body[data-theme="dark"] .btn-whatsapp-community:hover {
+    box-shadow: 0 8px 25px rgba(244, 208, 63, 0.4);
 }
 
 /* Contact / Modal Form Groups */
@@ -2260,6 +2358,14 @@ body[data-theme="dark"] .form-group textarea:focus {
     justify-content: center;
     color: #94A3B8;
     transition: var(--transition-fast);
+}
+
+.footer-social a svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+    stroke: currentColor;
+    fill: none;
 }
 
 .footer-social a:hover {
